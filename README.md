@@ -1,15 +1,13 @@
-# UTF8Cleaner
+# UTF8Gatekeeper
 
-[![Build Status](https://secure.travis-ci.org/singlebrook/utf8-cleaner.png?branch=master)](http://travis-ci.org/singlebrook/utf8-cleaner)
-
-Removes invalid UTF-8 characters from the environment so that your app doesn't choke
+Returns a 400 error when there are invalid UTF-8 characters in the environment so that your app doesn't choke
 on them. This prevents errors like "invalid byte sequence in UTF-8".
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'utf8-cleaner'
+    gem 'utf8_gatekeeper'
 
 And then execute:
 
@@ -17,12 +15,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install utf8-cleaner
+    $ gem install utf8_gatekeeper
 
 If you're not running Rails, you'll have to add the middleware to your config.ru:
 
-    require 'utf8-cleaner'
-    use UTF8Cleaner::Middleware
+    require 'utf8_gatekeeper'
+    use UTF8Gatekeeper::Middleware
 
 ## Usage
 
@@ -37,6 +35,8 @@ There's nothing to "use". It just works!
 5. Create new Pull Request
 
 ## Credits
+
+Forked from https://github.com/singlebrook/utf8-cleaner
 
 Original middleware author: @phoet - https://gist.github.com/phoet/1336754
 
