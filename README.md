@@ -7,20 +7,28 @@ on them. This prevents errors like "invalid byte sequence in UTF-8".
 
 Add this line to your application's Gemfile:
 
-    gem 'utf8_gatekeeper'
+```ruby
+gem 'utf8_gatekeeper'
+```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install utf8_gatekeeper
+```
+$ gem install utf8_gatekeeper
+```
 
 If you're not running Rails, you'll have to add the middleware to your config.ru:
 
-    require 'utf8_gatekeeper'
-    use UTF8Gatekeeper::Middleware
+```ruby
+require 'utf8_gatekeeper'
+use UTF8Gatekeeper::Middleware
+```
 
 ## Usage
 
@@ -36,10 +44,13 @@ There's nothing to "use". It just works!
 
 ## Credits
 
-Forked from https://github.com/singlebrook/utf8-cleaner
+Forked from [singlebrook's](https://github.com/singlebrook)
+[utf8-cleaner](https://github.com/singlebrook/utf8-cleaner).
 
-Original middleware author: @phoet - https://gist.github.com/phoet/1336754
+Original middleware author: [phoet](https://github.com/phoet) -
+[gist.github.com/phoet/1336754](https://gist.github.com/phoet/1336754)
 
-* Ruby 1.9.3 compatibility: @pithyless - https://gist.github.com/pithyless/3639014
-* Code review and cleanup: @nextmat
-* POST body sanitization: @salrepe
+* Ruby 1.9.3 compatibility: [pithyless](https://github.com/pithyless) -
+  [gist.github.com/pithyless/3639014](https://gist.github.com/pithyless/3639014)
+* Code review and cleanup: [nextmat](https://github.com/nextmat)
+* POST body sanitization: [salrepe](https://github.com/salrepe)
