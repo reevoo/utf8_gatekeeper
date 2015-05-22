@@ -8,24 +8,26 @@ on them. This prevents errors like "invalid byte sequence in UTF-8".
 Add this line to your application's Gemfile:
 
 ```ruby
+# Gemfile
 gem 'utf8_gatekeeper'
 ```
 
 And then execute:
 
 ```
-$ bundle
+bundle
 ```
 
 Or install it yourself as:
 
 ```
-$ gem install utf8_gatekeeper
+gem install utf8_gatekeeper
 ```
 
 If you're not running Rails, you'll have to add the middleware to your config.ru:
 
 ```ruby
+# config.ru
 require 'utf8_gatekeeper'
 use UTF8Gatekeeper::Middleware
 ```
