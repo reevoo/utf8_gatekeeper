@@ -1,5 +1,10 @@
 # UTF8Gatekeeper
 
+[![Build Status](https://travis-ci.org/reevoo/utf8_gatekeeper.svg?branch=master)](https://travis-ci.org/reevoo/utf8_gatekeeper)
+[![Gem Version](https://badge.fury.io/rb/utf8_gatekeeper.svg)](http://badge.fury.io/rb/utf8_gatekeeper)
+[![Code Climate](https://codeclimate.com/github/reevoo/utf8_gatekeeper/badges/gpa.svg)](https://codeclimate.com/github/reevoo/utf8_gatekeeper)
+[![Test Coverage](https://codeclimate.com/github/reevoo/utf8_gatekeeper/badges/coverage.svg)](https://codeclimate.com/github/reevoo/utf8_gatekeeper/coverage)
+
 Returns a 400 error when there are invalid UTF-8 characters in the environment so that your app doesn't choke
 on them. This prevents errors like "invalid byte sequence in UTF-8".
 
