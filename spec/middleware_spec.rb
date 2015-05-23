@@ -39,8 +39,8 @@ describe UTF8Gatekeeper::Middleware do
         [
           200,
           { 'Content-Type' => 'text/plain' },
-          [ 'foo-foo-foo' ],
-        ]
+          ['foo-foo-foo'],
+        ],
       )
     end
   end
@@ -102,8 +102,8 @@ describe UTF8Gatekeeper::Middleware do
             [
               200,
               { 'Content-Type' => 'text/plain' },
-              [ garbage ],
-          ]
+              [garbage],
+            ],
           )
         end
       end
@@ -116,8 +116,8 @@ describe UTF8Gatekeeper::Middleware do
             [
               200,
               { 'Content-Type' => 'text/plain' },
-              [ garbage ],
-          ]
+              [garbage],
+            ],
           )
         end
       end

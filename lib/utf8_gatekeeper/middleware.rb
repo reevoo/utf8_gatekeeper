@@ -24,7 +24,7 @@ module UTF8Gatekeeper
 
     def check_env_keys?(env)
       CHECK_ENV_KEYS.map do |key|
-        next unless value = env[key]
+        next unless (value = env[key])
         value.valid_encoding?
       end.compact.all?
     end
